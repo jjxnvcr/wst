@@ -1,12 +1,11 @@
 <?php
     function createConnection() {
-        $server = getenv("MYSQLHOST");
-        $username = getenv("MYSQLUSER");
-        $port = getenv("MYSQLPORT");
-        $password = getenv("MYSQLPASSWORD");
-        $database = getenv("MYSQLDATABASE");
+        $server = "localhost";
+        $username = "root";
+        $password = "";
+        $database = "bsit2fg1";
 
-        return new mysqli($server, $username, $password, $database, $port);
+        return new mysqli($server, $username, $password, $database);
     }
 
     function closeConnection($connection) {

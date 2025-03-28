@@ -2,7 +2,7 @@
 
 include("../connector.php");
 
-$id = $_REQUEST["school-id"];
+$id = $_REQUEST["id"];
 $surname = $_REQUEST["surname"];
 $firstName = $_REQUEST["first-name"];
 $middleName = $_REQUEST["middle-name"];

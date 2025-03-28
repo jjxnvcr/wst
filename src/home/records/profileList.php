@@ -69,7 +69,7 @@
                     echo "<td>" . $row[4] . "</td>";
                     echo "<td>" . $row[5] . "</td>";
 
-                    $fixedSurname = str_replace(" ", "", $row[1]);
+                    $fixedSurname = lcfirst(str_replace(" ", "", $row[1]));
                     
                     echo "<td>";
                         echo(
