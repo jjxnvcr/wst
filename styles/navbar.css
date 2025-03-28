@@ -1,0 +1,71 @@
+@import url(style.css);
+
+nav {
+    display: block;
+    background-color: var(--accent-200);
+    padding: 1vw 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5vw;
+    margin: 0;
+}
+
+nav li {
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-800);
+    font-size: 1.3vw;
+    display: block;
+    padding: 0.3vw 0.6vw;
+    text-align: center;
+    transition: all 0.3s;
+    border-radius: 1.5vw;
+}
+
+nav a:hover {
+    background-color: var(--accent-300);
+}
+
+nav a:active {
+    background-color: var(--accent-400);
+}
+
+.settings-dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-radius: 0.5vw;
+    box-shadow: 1px 1px 5px var(--primary-800);
+    background-color: var(--accent-200);
+    min-width: fit-content;
+    padding: 1.1vw 0;
+}
+
+.settings-dropdown:hover .settings-dropdown-content {
+    display: block;
+}
+
+.user-dropdown-content {
+    display: none;
+    position: absolute;  
+    background-color: var(--accent-200);
+    border-radius: 0.5vw;
+    box-shadow: 1px 1px 5px var(--primary-800);
+    top: 0;
+    left: 100%;
+    min-width: fit-content;
+    padding: 1.1vw 0;
+}
+
+.user-dropdown:hover .user-dropdown-content {
+    display: block;
+}

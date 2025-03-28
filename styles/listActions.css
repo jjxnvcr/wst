@@ -1,0 +1,140 @@
+@import url(navbar.css);
+
+body {
+    background-color: var(--background-50);
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    padding: 2vw 5vw;
+    margin: 5% 3%;
+    word-wrap: normal;
+    word-break: break-word;
+    white-space: normal;
+    background-color: var(--primary-100);
+    border-radius: 3vw;
+    box-shadow: 1px 1px 15px var(--text-800);
+}
+
+h1 {
+    align-self: flex-start;
+    color: var(--primary-700);
+    font-size: 3vw;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.details span p {
+    font-size: 1.4vw;
+    margin: 0;
+}
+
+.details span p:last-child {
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+}
+
+form label, input {
+    font-size: 1.4vw;
+}
+
+input {
+    border: 0.1vw solid;
+    border-radius: .5vw;
+}
+
+.hover-overlay {
+    position: absolute;
+    display: inline;
+    top: 0;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 1.5vw;
+    transition: 0.3s ease-in-out;
+    background-color: var(--text-800);
+}
+
+.image-container {
+    display: inline;
+    position: relative;
+    height: fit-content;
+}
+
+.image-container:hover .hover-overlay {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.hover-text {
+    color: white;
+    font-size: 1.5vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+img {
+    display: block;
+    border-radius: 1.5vw;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+    width: 25vw;
+    aspect-ratio: 1/1;
+}
+
+.buttons {
+    display: flex;
+    gap: 1.5vw;
+    margin: 15%;
+    align-self: center;
+}
+
+.image-button {
+    height: fit-content;
+    align-self: center;
+}
+
+button, .buttons input {
+    flex-grow: 1;
+    border-radius: 0.3vw;
+    border: none;
+    color: var(--text-100);
+    background-color: var(--accent-500);
+    font-size: 1.2vw;
+    padding: .5vw;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+button:hover, .buttons input:hover {
+    background-color: var(--accent-600);
+}
+
+button:active, .buttons input:active {
+    background-color: var(--accent-700);
+}

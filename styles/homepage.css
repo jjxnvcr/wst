@@ -1,0 +1,7 @@
+@import url(navbar.css);
+
+body {
+    background: var(--background-50);
+    height: 100vh;
+    margin: 0;
+}

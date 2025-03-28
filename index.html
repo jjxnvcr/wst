@@ -1,0 +1,41 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/form.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="header">Login</h1>
+      <p class="sub-header">Welcome back!</p>
+
+      <div class="wrapper">
+        <div class="form-wrapper">
+          <span class="input-field">
+            <label for="username">Username: </label>
+            <input type="text" id="username" name="username" />
+          </span>
+
+          <span class="input-field">
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="password" />
+          </span>
+        </div>
+
+        <div class="button-wrapper">
+          <button type="submit" class="confirm-btn" onclick="window.location.href = 'src/home/homepage.html';">
+            Login
+          </button>
+          <button type="reset" class="clear-btn">Clear</button>
+        </div>
+
+        <div class="login-links">
+          <a href="src/account/signup.php">Sign up</a>
+          <a href="src/account/forgot.html">Forgot Password?</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

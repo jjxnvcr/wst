@@ -1,0 +1,223 @@
+@import url(navbar.css);
+
+body {
+  background-color: var(--background-50);
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.container {
+  margin: 5%; 
+  border-radius: 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 2%;
+  background-color: var(--primary-100);
+  box-shadow: 1px 1px 15px var(--text-800);
+  word-break: break-word;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+.title {
+  display: block;
+}
+
+.head,
+.credits {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.head h1, h3 {
+  margin: 0;
+}
+
+.head h1 {
+  font-size: 4.3vw;
+  color: var(--primary-500);
+}
+
+.head h3 {
+  font-size: 2.5vw;
+  color: var(--secondary-300);
+}
+
+.credits p, a {
+  font-size: 1vw;
+}
+
+.credits a {
+  position: relative;
+  text-decoration: none;
+  color: var(--accent-500);
+  font-weight: bold;
+}
+
+.credits a::after {
+  position: absolute;
+  content: "";
+  background: var(--secondary-400);
+  bottom: 0;
+  right: 0;
+  height: 0.17vw;
+  width: 0%;
+  transition: 0.2s ease-in-out;
+}
+
+.credits a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.table-wrapper {
+  background-color: var(--secondary-200);
+  border-radius: 3vw;
+  padding: 2vw;
+}
+
+table {
+  height: fit-content;
+  border-collapse: collapse;
+  justify-content: center;
+  table-layout: fixed;
+  width: 100%;
+}
+
+th {
+  font-size: 1.8vw;
+  padding: .5vw;
+  color: var(--text-700);
+  margin: 0;
+}
+
+tr {
+  height: 7vw;
+}
+
+td {
+  padding: 0.5vw;
+  text-align: center;
+  font-size: 1.3vw;
+  border-bottom: 0.15vw solid;
+  border-color: var(--text-800);
+}
+
+td[class="time"] {
+  color: var(--text-800);
+  vertical-align: middle;
+}
+
+ul {
+  list-style-type: none;
+}
+
+td div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: var(--text-100);
+  border-radius: 1.5vw;
+  height: 100%;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+td div h4 {
+  font-size: 1.4vw;
+}
+
+td div p {
+  font-size: 1.3vw;
+  font-weight: normal;
+}
+
+td div ul {
+  padding: 0;
+}
+
+td[class="vacant"] {
+  height: 100%;
+}
+
+.edp {
+  background-color: var(--background-500);
+}
+
+.edp:hover {
+  background-color: var(--background-600);
+}
+
+.ads {
+  background-color: var(--accent-400);
+  color: var(--text-800);
+}
+
+.ads:hover {
+  background-color: var(--accent-500);
+}
+
+.ipt {
+  background-color: var(--background-300);
+  color: var(--text-800);
+}
+
+.ipt:hover {
+  background-color: var(--background-400);
+}
+
+.da {
+  background-color: var(--secondary-700);
+}
+
+.da:hover {
+  background-color: var(--secondary-800);
+}
+
+.pe {
+  background-color: var(--text-700);
+}
+
+.pe:hover {
+  background-color: var(--text-800);
+}
+
+.wst {
+  background-color: var(--background-700);
+}
+
+.wst:hover {
+  background-color: var(--background-800);
+}
+
+.artapp {
+  background-color: var(--primary-400);
+  color: var(--text-800);
+}
+
+.artapp:hover {
+  background-color: var(--primary-500);
+}
+
+.fl {
+  background-color: var(--accent-500);
+}
+
+.fl:hover {
+  background-color: var(--accent-600);
+}
+
+.networking {
+  background-color: var(--secondary-500);
+}
+
+.networking:hover {
+  background-color: var(--secondary-600);
+}

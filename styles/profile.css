@@ -1,0 +1,304 @@
+@import url(navbar.css);
+
+body {
+  background-color: var(--background-50);
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  align-items: start;
+  padding: 1vw;
+  word-wrap: normal;
+  word-break: break-word;
+  white-space: normal;
+}
+
+.user-content {
+  background-color: var(--background-200);
+  border-radius: 3vw;
+  display: flex;
+  align-items: center;
+  margin: 1%;
+}
+
+.user-profile {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 1.2vw;
+  width: 30%;
+}
+
+.personal {
+  display: inline-flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.avatar {
+  border-radius: 1.5vw;
+  display: inline-block;
+  margin: auto;
+  overflow: hidden;
+}
+
+.avatar img {
+  border-radius: 1.5vw;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+  width: 25vw;
+  aspect-ratio: 1/1;
+}
+
+.user {
+  display: inline-flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.user .name {
+  font-size: 2.3vw;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.user .title {
+  width: fit-content;
+  font-weight: lighter;
+  background-color: var(--background-500);
+  color: var(--text-100);
+  border-radius: 0.6vw;
+}
+
+.user .title h4 {
+  margin: 0;
+  padding: 0.3vw 0.6vw;
+  font-size: 1.2vw;
+}
+
+.socials {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 2.5vw;
+  margin-bottom: 0;
+  gap: 1.6vw;
+  padding: 0;
+  width: 100%;
+}
+
+.socials li {
+  display: inline-flex;
+}
+
+.socials span {
+  display: inline-flex;
+  background-color: var(--primary-500);
+  border-radius: 0.7vw;
+  padding: 0.6vw 0.6vw 0.6vw 0.6vw;
+  transition: all 0.3s ease-in-out;
+}
+
+.socials span a {
+  display: inline-flex;
+}
+
+.socials span:hover {
+  transform: translateY(-1vw);
+  background-color: var(--primary-600);
+}
+
+.socials span svg {
+  color: var(--text-100);
+  width: 2vw;
+  height: 2vw;
+}
+
+.others {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.5vw;
+  background-color: var(--background-300);
+  margin: 1vw 0;
+  padding: 1vw 0;
+  width: 100%;
+}
+
+.others li {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 0.5vw;
+  margin-bottom: 0.5vw;
+  width: 80%;
+}
+
+.others .others-content {
+  margin: 0;
+  padding: 1vw;
+  border-radius: 5px;
+}
+
+.others .separator {
+  width: 80%;
+  border-top: var(--text-100);
+  border-style: solid;
+  border-width: 0.1vw;
+  border-top: var(--primary-700);
+  background: var(--primary-700);
+}
+
+.others-content div {
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.others-content h4 {
+  font-size: 1.4vw;
+  margin: 0;
+  margin-bottom: 1vw;
+  color: var(--text-900);
+}
+
+.others-content p {
+  position: relative;
+  font-size: 1vw;
+  margin: 0;
+  color: var(--text-900);
+}
+
+.others-content p::after {
+  position: absolute;
+  content: "";
+  background: var(--primary-500);
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+  height: 0.17vw;
+  width: 0%;
+  transition: 0.3s ease-in-out;
+}
+
+.others-content:hover p::after {
+  width: 100%;
+  left: 0;
+}
+
+.others li span {
+  display: inline-flex;
+  margin-right: 1.5vw;
+  color: var(--accent-600);
+}
+
+.others li span svg {
+  width: 2vw;
+  height: 2vw;
+}
+
+.user-details {
+  display: block;
+  padding: 2%;
+  width: 100%;
+}
+
+.user-about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+}
+
+.user-about-me .title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.user-about-me .title h1 {
+  display: inline-block;
+  font-size: 3.5vw;
+  margin-top: 0;
+  margin-bottom: 1.5vw;
+}
+
+.user-about-me .title .line {
+  display: inline;
+  background-color: var(--secondary-500);
+  height: 0.3vw;
+  width: 10vw;
+  margin-left: 2vw;
+}
+
+.user-about-me .content p {
+  font-size: 1.3vw;
+}
+
+.user-skills {
+  width: 100%;
+}
+
+.user-skills h2 {
+  font-size: 2.5vw;
+  margin: 1.5vw 0 1.5vw 0;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(20vw, 100%), 1.5fr));
+  padding: 0;
+  margin: 0;
+  gap: 1.5vw;
+}
+
+.skill {
+  display: inline-flex;
+  gap: 1vw;
+  padding: 1.5vw;
+  border: 0.2vw solid var(--primary-700);
+  border-radius: 1vw;
+}
+
+.skill span {
+  display: inline-flex;
+}
+
+.skill svg {
+  width: 3.2vw;
+  height: 3.2vw;
+  color: var(--accent-600);
+  transition: 0.5s ease-out;
+}
+
+.skill svg:hover {
+  transform: rotate(360deg);
+}
+
+.skill-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-info h4 {
+  margin: 0;
+  font-size: 1.5vw;
+}
+
+.skill-info p {
+  font-size: 1vw;
+}
+

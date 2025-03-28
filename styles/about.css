@@ -1,0 +1,57 @@
+@import url(navbar.css);
+
+body {
+    margin: 0;
+}
+
+img {
+    display: block;
+    border-radius: 1.5vw;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+    width: 10vw;
+    aspect-ratio: 1/1;
+}
+
+p {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5% 3%;
+    margin: 5% 3%;
+    background-color: var(--primary-100);
+    border-radius: 3vw;
+    box-shadow: 1px 1px 15px var(--text-800);
+    word-wrap: normal;
+    word-break: break-word;
+    white-space: normal;
+}
+
+.title {
+    font-size: 6vw;
+    margin-top: 0;
+}
+
+.members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.member {
+    display: flex;
+    gap: 1.4vw;
+}
+
+.member-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.6vw;
+}
