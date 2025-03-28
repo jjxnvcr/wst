@@ -1,10 +1,10 @@
 <?php
     function createConnection() {
-        $server = ;
-        $username = ;
-        $port = ;
-        $password = ;
-        $database = ;
+        $server = getenv("MYSQLHOST");
+        $username = getenv("MYSQLUSER");
+        $port = getenv("MYSQLPORT");
+        $password = getenv("MYSQLPASSWORD");
+        $database = getenv("MYSQLDATABASE");
 
         return new mysqli($server, $username, $password, $database, $port);
     }
