@@ -45,19 +45,19 @@
                 <input type=\"text\" name=\"id\" value=\"{$_GET['id']}\" disabled>
 
                 <label for=\"surname\">Surname:</label>
-                <input type=\"text\" id=\"surname\" name=\"surname\" disabled>
+                <input type=\"text\" id=\"surname\" name=\"surname\" value=\"{$result['Surname']}\" disabled>
 
                 <label for=\"first-name\">First Name:</label>
-                <input type=\"text\" id=\"first-name\" name=\"first-name\" disabled>
+                <input type=\"text\" id=\"first-name\" name=\"first-name\" value=\"{$result['FirstName']}\" disabled>
 
                 <label for=\"middle-name\">Middle Name:</label>
-                <input type=\"text\" id=\"middle-name\" name=\"middle-name\" disabled>
+                <input type=\"text\" id=\"middle-name\" name=\"middle-name\" value=\"{$result['MiddleName']}\" disabled>
 
                 <label for=\"course\">Course:</label>
-                <input type=\"text\" id=\"course\" name=\"course\" disabled>
+                <input type=\"text\" id=\"course\" name=\"course\" value=\"{$result['Course']}\" disabled>
 
                 <label for=\"year\">Year:</label>
-                <input type=\"number\" id=\"year\" name=\"year\" disabled>
+                <input type=\"number\" id=\"year\" name=\"year\" value=\"{$result['Year']}\" disabled>
 
                 <div class=\"buttons\">
                     <input type=\"submit\" value=\"Delete\">

@@ -5,7 +5,7 @@
         $password = "";
         $database = "bsit2fg1";
 
-        return new mysqli($server, $username, $password, $database);
+        return new mysqli($server, $username, $password, $database, $port);
     }
 
     function closeConnection($connection) {

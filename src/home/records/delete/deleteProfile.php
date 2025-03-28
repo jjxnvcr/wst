@@ -52,14 +52,12 @@
 
                     echo("<img src=\"../../../../asset/${surname}.jpg\" alt=\"User Image\">");
                 ?>
-
-                <div class="hover-overlay">
-                    <div class="hover-text">Upload Image</div>
-                </div>
             </div>
     
             <div class="details">
                 <?php
+                    $res = query(createConnection(), "SELECT * FROM `userprofile` WHERE `SchoolID` = '{$_GET['id']}'")->fetch_assoc();
+
                     echo("
                     <form action=\"../../../../php/delete/deleteProfile.php\" method=\"POST\">
                         <input type=\"hidden\" name=\"id\" value=\"{$_GET['id']}\">
@@ -67,19 +65,19 @@
                         <input type=\"text\" name=\"id\" value=\"{$_GET['id']}\" disabled>
 
                         <label for=\"surname\">Surname:</label>
-                        <input type=\"text\" id=\"surname\" name=\"surname\" disabled>
+                        <input type=\"text\" id=\"surname\" name=\"surname\" value=\"{$res['Surname']}\" disabled>
             
                         <label for=\"first-name\">First Name:</label>
-                        <input type=\"text\" id=\"first-name\" name=\"first-name\" disabled>
+                        <input type=\"text\" id=\"first-name\" name=\"first-name\" value=\"{$res['FirstName']}\" disabled>
             
                         <label for=\"middle-name\">Middle Name:</label>
-                        <input type=\"text\" id=\"middle-name\" name=\"middle-name\" disabled>
+                        <input type=\"text\" id=\"middle-name\" name=\"middle-name\" value=\"{$res['MiddleName']}\" disabled>
             
                         <label for=\"birthdate\">Birthdate:</label>
-                        <input type=\"date\" id=\"birthdate\" name=\"birthdate\" disabled>
+                        <input type=\"date\" id=\"birthdate\" name=\"birthdate\" value=\"{$res['Birthdate']}\" disabled>
             
                         <label for=\"email\">Email:</label>
-                        <input type=\"text\" id=\"email\" name=\"email\" disabled>
+                        <input type=\"text\" id=\"email\" name=\"email\" value=\"{$res['Email']}\" disabled>
 
                         <div class=\"buttons\">
                             <input type=\"submit\" value=\"Delete\">
